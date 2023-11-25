@@ -1,0 +1,32 @@
+/* Fyll på med all CSS-kod nödvändigt för att headern ska se ut som den på videon */
+.headerContainer {
+    height: 150px;
+}
+
+.headerContainer h1 {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'RC-Bold';
+    text-shadow: 0 0 10px white;
+}
+
+.headerImageContainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    gap: var(--gaap);
+}
+
+.headerImageContainer div {
+    flex-basis: 0;
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.headerImageContainer .image1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

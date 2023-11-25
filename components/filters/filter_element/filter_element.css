@@ -1,0 +1,48 @@
+.filter_element
+{
+  padding: 2px 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  border: 1px solid #333;
+  background-color: rgba(255,255,255,.7);
+}
+
+.filter_element:hover
+{
+  cursor: pointer;
+  box-shadow: 0 0 5px black;
+}
+
+.check_container
+{
+  height: 100%;
+  flex-basis: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check_mark
+{
+  border-radius: 50%;
+  border: 1px solid black;
+
+  transition: background-color .5s;
+}
+
+.filter_element.checked .check_mark
+{
+  background-color: black;
+}
+
+.filter_element.checked .text
+{
+  font-family: "RC-Regular";
+
+}

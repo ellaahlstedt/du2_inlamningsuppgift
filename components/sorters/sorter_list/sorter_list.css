@@ -1,0 +1,22 @@
+
+#sorter_list
+{
+  padding: 2px 10px;
+  background-color: lightblue;
+  margin-left: auto;
+}
+
+#sorter_list h1
+{
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: "RC-Bold";
+  font-size: 14px;
+}
+
+#sorter_list > div
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}

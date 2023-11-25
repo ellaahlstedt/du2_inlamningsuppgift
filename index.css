@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "RC-Light";
+  src: url(./fonts/RobotoCondensed-Light.ttf);
+}
+
+@font-face {
+  font-family: "RC-Bold";
+  src: url(./fonts/RobotoCondensed-Bold.ttf);
+}
+
+@font-face {
+  font-family: "RC-Regular";
+  src: url(./fonts/RobotoCondensed-Regular.ttf);
+}
+
+:root
+{
+  --gaap: 5px;
+}
+
+body
+{
+  font-family: "RC-Light";
+}
+
+button
+{
+  font-family: "RC-Light";
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+button:active
+{
+  background-color: rgba(0,0,0,.5);
+  color: white;
+}
+
+button.checker:active div
+{
+  border-color: white;
+}
+
+.interactive:hover
+{
+  cursor: pointer;
+  box-shadow: 0 0 5px black;
+}
+
+.check_mark
+{
+  --dims: 10px;
+  border: 1px solid grey;
+  border-radius: 50%;;
+  height: var(--dims);
+  width: var(--dims);
+}
+
+.checked .check_mark
+{
+  background-color: black;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gaap);
+}
+
+main {
+  display: flex;
+  gap: var(--gaap);
+}
+
+#left {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+#right {
+  flex-grow: 0;
+  flex-grow: 2;
+}
+
+#right_top {
+  display: flex;
+  gap: var(--gaap);
+}

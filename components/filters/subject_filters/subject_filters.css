@@ -1,0 +1,10 @@
+
+#subject_filters
+{
+  flex-basis: 202px;
+  padding: var(--gaap);
+  background-color: lightgreen;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;  
+}

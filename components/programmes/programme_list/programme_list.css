@@ -1,0 +1,29 @@
+#programme_list
+{
+  /* padding: 2px; */
+  /* background-color: black; */
+}
+
+#programme_list ol
+{
+  padding: 0;
+  margin: 0;
+  
+  --nCols: 3;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(var(--nCols), 1fr);
+  grid-auto-rows: 250px;
+}
+
+
+@media (max-width: 950px) {
+  #programme_list ol {
+    --nCols: 2;
+  }
+}
+@media (min-width: 1170px) {
+  #programme_list ol {
+    --nCols: 4;
+  }
+}

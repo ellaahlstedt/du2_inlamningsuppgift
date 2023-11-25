@@ -1,0 +1,54 @@
+.programme {
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: var(--border_radius);
+
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  gap: var(--gaap);
+  flex-direction: column;
+
+  font-size: 15px;
+  overflow: hidden;
+}
+
+.programme > * {
+  background-color: rgba(255,255,255,.8);
+  border-radius: 12px;
+  padding: var(--gaap);
+}
+
+.programme h1
+{
+  margin: 0;
+  font-family: "RC-Bold";
+  font-size: 20px;
+}
+
+.programme .sun-index
+{
+  font-family: "RC-Regular";
+}
+
+.programme .more_info button
+{
+  border: 0;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.programme .more_info {
+  align-self: flex-start;
+}
+
+.more_info .extra_info {
+  margin-top: 5px;
+  display: none;
+}
+
+.bottom_programme {
+  margin-top: auto;
+}

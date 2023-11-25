@@ -1,0 +1,51 @@
+.sort_element
+{
+  --height: 24px;
+  --backColor: #fafafa;
+  --b_radius: 5px;
+  width: 270px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  flex-basis: var(--height);
+  font-size: 14px;
+}
+
+.sort_element:active .check_container
+{
+  background-color: rgba(0,0,0,.5);
+  color: white;
+}
+
+.sort_element:active
+{
+  color: black;
+}
+
+.sort_element > *
+{
+  background-color: var(--backColor);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sort_element .check_container
+{
+  flex-basis: var(--height);
+  border-top-left-radius: var(--b_radius);
+  border-bottom-left-radius: var(--b_radius);
+}
+
+.sort_element .text
+{
+  flex: 1 0 0;
+}
+
+.sort_element .direction
+{
+  flex-basis: 50px;
+  border-top-right-radius: var(--b_radius);
+  border-bottom-right-radius: var(--b_radius);
+}
