@@ -16,10 +16,8 @@ function array_find (a, test_function) {
   // Loopar igenom arrayen a och anropar funktionen test_function med varje element i a som argument.
   // Loopen (och funktionen) avbryts när ett test_function returnerar true.
   // Funktionen returnerar elementet i a för vilken test_function returnerade true.
-  for(let i=0; a.length>i; i++) {
-    let temp = test_function(a[i]);
-    if (temp == true) {
-      console.log(a[i]);
+  for (let i=0; i<a.length; i++) {
+    if (test_function(a[i]) == true ) {
       return a[i];
     }
   }
@@ -42,6 +40,9 @@ function array_filter (a, test_function) {
 
 function array_each (a, callback) {
   // Loopar igenom arrayen a och anropar funktionen callback med varje element i a som argument.
+  for(let i=0; a.length>i; i++) {
+    callback(a[i]);
+  }
 }
 
 function array_map (a, transform_function) {

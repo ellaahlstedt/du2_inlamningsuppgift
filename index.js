@@ -23,3 +23,5 @@ render_subject_filters(structure_containers.right_top);
 render_level_filters(structure_containers.right_top);
 render_language_filters(structure_containers.right_top);
 render_sorter_list(structure_containers.right_top);
+
+render_programme(structure_containers.right_bottom, PROGRAMMES);
