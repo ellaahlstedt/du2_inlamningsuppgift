@@ -27,7 +27,6 @@ function array_filter (a, test_function) {
   // Loopar igenom arrayen a och anropar funktionen test_function med varje element i a som argument.
   // Funktionen returnerar en ny array med alla elementet i a för vilka test_function returnerade true.
   let cities = [];
-  // console.log(a);
 
   for(let i=0; a.length>i; i++){
     let temp = test_function(a[i]);
