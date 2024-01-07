@@ -1,0 +1,11 @@
+Inlämningsuppgift - Read me
+
+Hittade inte vart intruktionerna till zip filen är så har bara gjort som förra inlämningsuppgiften.
+
+
+Länk till github
+https://github.com/ellaahlstedt/du2_inlamningsuppgift
+(vet inte om det behövdes så finns inte lika många commits)
+
+Länk till sidan
+https://www.maumt.se/wdu/ht23/students/Ella/utbytesstudier/

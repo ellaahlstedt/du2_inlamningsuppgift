@@ -1,5 +1,4 @@
-function render_city_filters (parent)
-{
+function render_city_filters(parent) {
   const container = document.createElement("div");
   container.id = "city_filters";
   parent.append(container);

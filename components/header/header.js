@@ -22,20 +22,13 @@ function render_header(parent)
   imageCon.classList.add("headerImageContainer");
   headerCon.appendChild(imageCon);
 
-  // lägg till h1 :)))
-  
-
-  // countries[ random].imagesNormal[random]
   for (let i = 0; i < 3; i++) {
     let image = document.createElement("div");
     image.classList.add(`image${i}`);
-    let randomCountry = Math.floor(Math.random()*COUNTRIES.length)
+    let randomCountry = Math.floor(Math.random()*COUNTRIES.length);
     let randomImage = Math.floor(Math.random()*COUNTRIES[randomCountry].imagesNormal.length)
     
-    // console.log(`(url: ./media/geo_images/${COUNTRIES[randomCountry].imagesNormal[randomImage]})`)
-    // image.style.backgroundColor = "red";
     image.style.backgroundImage = `url(./media/geo_images/${COUNTRIES[randomCountry].imagesNormal[randomImage]})`;
-    // image.setAttribute("src", )
     imageCon.appendChild(image);
   }
 

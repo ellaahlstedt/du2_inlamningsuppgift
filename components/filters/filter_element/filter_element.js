@@ -1,4 +1,4 @@
-function render_filter_element (parent, text)
+function render_filter_element(parent, text)
 {
   const container = document.createElement("div");
   parent.append(container);

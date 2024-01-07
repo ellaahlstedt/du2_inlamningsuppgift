@@ -1,5 +1,4 @@
-function render_structure()
-{
+function render_structure() {
   const container = document.querySelector("#wrapper");
   container.innerHTML = `
     <header></header>
